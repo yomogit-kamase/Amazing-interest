@@ -384,14 +384,21 @@ body { background: #fff; }
 .experts::after { content: ""; position: absolute; right: -190px; top: 90px; width: 450px; height: 450px; border: 60px solid #8be0dc2b; border-radius: 50%; }
 .experts .container { position: relative; z-index: 1; }
 .expert-profile { display: grid; grid-template-columns: minmax(310px, .82fr) minmax(0, 1.18fr); max-width: 1050px; margin: 0 auto; overflow: hidden; background: #fff; border-radius: 22px; box-shadow: 0 18px 55px #173f4518; }
+.expert-profile + .expert-profile { margin-top: 38px; }
+.expert-profile-reverse .expert-photo { order: 2; }
 .expert-photo { position: relative; min-height: 560px; background: #eef2f2; }
 .expert-photo::after { content: ""; position: absolute; inset: auto 0 0; height: 24%; background: linear-gradient(transparent,#17353a28); pointer-events: none; }
 .expert-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
 .expert-copy { display: flex; flex-direction: column; justify-content: center; padding: 48px 52px; }
 .expert-role { align-self: flex-start; margin-bottom: 15px; padding: 7px 14px; border-radius: 99px; background: #dff8f8; color: var(--blue-dark); font-size: 19px; font-weight: 800; }
 .expert-copy h3 { margin: 0; color: var(--ink); font-size: 38px; letter-spacing: .05em; }
+.expert-company { margin: 8px 0 0; color: #68767d; font-size: 19px; font-weight: 700; }
 .expert-message { margin: 24px 0 22px; color: var(--blue-dark); font-size: 29px; font-weight: 800; line-height: 1.55; }
-.expert-copy > p:not(.expert-role):not(.expert-message) { margin: 0 0 15px; color: var(--muted); font-size: 20px; line-height: 1.85; }
+.expert-copy > p:not(.expert-role):not(.expert-message):not(.expert-company):not(.credentials-title) { margin: 0 0 15px; color: var(--muted); font-size: 20px; line-height: 1.85; }
+.credentials-title { margin: 0 0 10px; color: var(--ink); font-size: 20px; font-weight: 800; }
+.expert-credentials { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 9px 20px; margin: 0; padding: 0; list-style: none; }
+.expert-credentials li { position: relative; padding-left: 19px; color: var(--muted); font-size: 19px; font-weight: 650; line-height: 1.55; }
+.expert-credentials li::before { content: ""; position: absolute; left: 0; top: .65em; width: 8px; height: 8px; border-radius: 50%; background: var(--blue); }
 .comparison { padding-top: 72px; background: #f4f6f7; }
 .comparison-table { background: #fff; box-shadow: 0 12px 35px #1b3f4510; }
 .comparison-table thead th { background: #e5eeee; }
@@ -439,8 +446,11 @@ body { background: #fff; }
   .expert-copy { padding: 28px 22px 32px; }
   .expert-role { font-size: 17px; }
   .expert-copy h3 { font-size: 32px; }
+  .expert-company { font-size: 19px; }
   .expert-message { font-size: 26px; }
-  .expert-copy > p:not(.expert-role):not(.expert-message) { font-size: 20px; line-height: 1.8; }
+  .expert-copy > p:not(.expert-role):not(.expert-message):not(.expert-company):not(.credentials-title) { font-size: 20px; line-height: 1.8; }
+  .expert-credentials { grid-template-columns: 1fr; gap: 8px; }
+  .expert-credentials li { font-size: 19px; }
   .connect { padding: 55px 0; }
   .connect-lead { text-align: left; }
   .connect-map { display: grid; grid-template-columns: 1fr; padding: 20px; }
