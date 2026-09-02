@@ -311,3 +311,127 @@ dialog::backdrop { background: #123454ae; backdrop-filter: blur(3px); }
   .contact h2, .contact .eyebrow { color: var(--ink); }
   .contact-copy { position: static; }
 }
+
+/* 2026-09 reference-led redesign: outcome-first story, connected expertise, teal visual system. */
+:root {
+  --blue: #08aeb9;
+  --blue-dark: #087e89;
+  --ink: #252b31;
+  --muted: #52616a;
+  --pale: #eff7f8;
+  --line: #b9dfe1;
+  --coral: #cde600;
+  --aqua: #5fd7d4;
+  --orange: #ffae28;
+}
+body { background: #fff; }
+.site-header { box-shadow: 0 4px 18px #163b4110; }
+.brand, .eyebrow, h2, .main-nav > a:hover { color: var(--blue-dark); }
+.brand-mark { stroke: var(--blue-dark); }
+.button { background: var(--blue); color: #fff; border-color: var(--blue); }
+.button:hover { background: var(--blue-dark); box-shadow: 0 7px 20px #08aeb927; }
+.button-small { background: #3f4b50; border-color: #3f4b50; }
+.button-small:hover { background: #252b31; }
+.button-outline { background: #fff; color: var(--blue-dark); border-color: var(--blue); }
+.hero { position: relative; overflow: hidden; background: linear-gradient(112deg,#f4f6f7 0 57%,#d9f7f5 57% 100%); }
+.hero::after { content: ""; position: absolute; right: -8vw; bottom: -270px; width: 650px; height: 650px; border: 2px solid #77dcd830; border-radius: 50%; box-shadow: 0 0 0 70px #77dcd817,0 0 0 140px #77dcd812; }
+.hero-grid { position: relative; z-index: 1; min-height: 720px; padding-top: 55px; padding-bottom: 65px; }
+.audience-label { background: #fff; border-color: #8dd9dc; color: var(--ink); }
+.hero h1 { font-size: 59px; line-height: 1.42; }
+.hero h1 em { color: var(--blue); font-style: normal; font-size: 1.08em; }
+.hero-lead strong { color: var(--blue-dark); font-size: 1.08em; letter-spacing: .03em; }
+.hero-buttons { display: flex; gap: 15px; flex-wrap: wrap; }
+.hero-buttons .button { min-width: 260px; }
+.hero-visual { position: relative; }
+.hero-orbit { position: relative; padding: 45px 28px; border-radius: 50%; background: #ffffff5e; }
+.hero-orbit img { position: relative; z-index: 2; }
+.orbit-label { position: absolute; z-index: 3; display: grid; place-items: center; width: 102px; height: 102px; border-radius: 50%; background: #fff; color: var(--ink); border: 6px solid var(--aqua); font-size: 21px; font-weight: 800; box-shadow: 0 10px 30px #17484b20; }
+.orbit-management { top: 0; left: 13%; }
+.orbit-brand { top: 7%; right: 4%; border-color: var(--orange); }
+.orbit-it { right: 6%; bottom: 2%; border-color: var(--coral); }
+.connect { position: relative; background: #fff; text-align: center; padding: 84px 0; overflow: hidden; }
+.connect::before { content: ""; position: absolute; width: 560px; height: 560px; border-radius: 50%; background: #e7fafa; left: -350px; top: -180px; }
+.connect-inner { position: relative; }
+.connect-lead { max-width: 900px; margin: 25px auto 35px; color: var(--muted); }
+.connect-map { display: flex; align-items: center; justify-content: center; gap: 16px; padding: 28px; border-radius: 18px; background: var(--pale); }
+.connect-map > div { display: flex; min-width: 165px; min-height: 112px; padding: 18px; flex-direction: column; align-items: center; justify-content: center; background: #fff; border: 2px solid var(--line); border-radius: 14px; }
+.connect-map strong { color: var(--blue-dark); font-size: 25px; }
+.connect-map span { color: var(--muted); font-size: 20px; }
+.connect-map b, .connect-map i { color: var(--blue); font-size: 34px; font-style: normal; }
+.connect-map .connect-goal { background: var(--blue); border-color: var(--blue); }
+.connect-map .connect-goal strong, .connect-map .connect-goal span { color: #fff; }
+.targets { background: #f3f5f6; }
+.target-card { padding: 0; text-align: left; overflow: hidden; border: 0; border-radius: 17px; box-shadow: 0 10px 35px #273c4310; }
+.target-card img { margin: 0; padding: 12px; background: #eaffff; }
+.target-card > div { padding: 24px 25px 29px; }
+.target-card .target-person { display: inline-block; padding: 4px 11px; border-radius: 99px; background: #dff8f8; color: var(--blue-dark); font-size: 19px; font-weight: 700; border: 0; }
+.target-card h3 { color: var(--ink); font-size: 29px; margin: 15px 0; line-height: 1.55; }
+.target-card > div > p:last-child { padding: 0; border: 0; color: var(--muted); font-size: 21px; line-height: 1.75; }
+.solution-banner { margin-top: 40px; padding: 31px; border-radius: 16px; background: linear-gradient(100deg,#09afb9,#50d3cd); color: #fff; text-align: center; }
+.solution-banner > p { font-size: 20px; font-weight: 700; }
+.solution-banner h3 { font-size: 32px; margin: 7px 0 21px; }
+.solution-banner .button { background: #fff; border-color: #fff; color: var(--blue-dark); }
+.approach { background: #fff; }
+.service-card { padding: 26px; border: 0; border-radius: 17px; background: #fff; box-shadow: 0 12px 40px #143e4415; border-top: 5px solid var(--aqua); }
+.service-card:nth-child(2) { border-top-color: var(--orange); }
+.service-card:nth-child(3) { border-top-color: var(--coral); }
+.expert-label { color: var(--muted); border: 0; }
+.service-card h3 { color: var(--ink); font-size: 28px; }
+.service-card > p { color: var(--muted); font-size: 21px; }
+.approach-note { background: #e4f9f8; border-radius: 16px; }
+.approach-note strong { color: var(--blue-dark); }
+.comparison { padding-top: 72px; background: #f4f6f7; }
+.comparison-table { background: #fff; box-shadow: 0 12px 35px #1b3f4510; }
+.comparison-table thead th { background: #e5eeee; }
+.comparison-table thead .our-column { background: var(--blue-dark); }
+.comparison-table tbody .our-column { background: #e7fafa; color: var(--blue-dark); }
+.review { background: #fff; }
+.four-steps { grid-template-columns: repeat(4,1fr); }
+.four-steps li { position: relative; border: 0; background: #f3f6f6; }
+.four-steps li:not(:last-child)::after { content: "→"; position: absolute; top: 33px; right: -23px; z-index: 2; color: var(--blue); font-weight: 800; }
+.review-steps li > span { background: var(--blue); }
+.contact { position: relative; overflow: hidden; background: linear-gradient(115deg,#087e89,#08b6bf); }
+.contact::after { content: ""; position: absolute; width: 440px; height: 440px; border: 70px solid #fff1; border-radius: 50%; right: -160px; bottom: -180px; }
+.contact .container { position: relative; z-index: 1; }
+.contact .eyebrow { color: #d8ffff; }
+.form-panel { box-shadow: 0 15px 45px #063c4633; }
+.consultation-rail[hidden] { background: var(--blue-dark); }
+
+@media (min-width: 701px) and (max-width: 999px) {
+  .connect-map { flex-wrap: wrap; }
+  .connect-map > div { min-width: 190px; }
+  .connect-map i { width: 100%; }
+  .four-steps { grid-template-columns: 1fr; }
+  .four-steps li:not(:last-child)::after { display: none; }
+  .service-card .expert-label { grid-column: 1; grid-row: 1; }
+  .service-card img { grid-row: 2/5; }
+}
+@media (max-width: 700px) {
+  .hero { background: linear-gradient(160deg,#f4f6f7 0 63%,#d9f7f5 63% 100%); }
+  .hero-grid { min-height: 0; }
+  .hero h1 { font-size: 40px; }
+  .hero-lead br { display: block; }
+  .hero-buttons { width: 100%; }
+  .hero-buttons .button { width: 100%; min-width: 0; justify-content: center; }
+  .hero-orbit { padding: 34px 10px 20px; }
+  .orbit-label { width: 72px; height: 72px; border-width: 4px; font-size: 17px; }
+  .orbit-management { left: 4%; }
+  .orbit-brand { right: 0; }
+  .orbit-it { right: 2%; bottom: -4%; }
+  .connect { padding: 55px 0; }
+  .connect-lead { text-align: left; }
+  .connect-map { display: grid; grid-template-columns: 1fr; padding: 20px; }
+  .connect-map > div { width: 100%; min-width: 0; }
+  .connect-map b { line-height: 1; }
+  .connect-map i { transform: rotate(90deg); line-height: 1; }
+  .target-card { padding: 0; }
+  .target-card > div { padding: 22px; }
+  .target-card h3 { font-size: 28px; }
+  .solution-banner { padding: 27px 18px; }
+  .solution-banner h3 { font-size: 28px; }
+  .service-card { padding: 23px; }
+  .comparison { padding-top: 50px; }
+  .comparison-table tbody th { background: var(--blue-dark); }
+  .four-steps { grid-template-columns: 1fr; }
+  .four-steps li:not(:last-child)::after { display: none; }
+}

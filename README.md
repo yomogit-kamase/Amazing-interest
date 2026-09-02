@@ -2,6 +2,8 @@
 
 経営・ブランディング・ITの専門家が、提案から実行まで支援するチームのランディングページです。
 
+デザイン改訂では、[GMOマーケティングコネクト](https://www.gmo-c.jp/lp/marketing-connect/)の成果を先に示すファーストビュー、課題から解決へ進む構成、図解、反復CTA、ターコイズを基調としたトーンを参考にしています。コード・画像・文章・商標・実績値は転用していません。
+
 公開URL: https://yomogit-kamase.github.io/Amazing-interest/
 
 ## 構成
