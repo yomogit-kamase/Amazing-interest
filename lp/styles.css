@@ -448,6 +448,7 @@ body { background: #fff; }
   .expert-profile { display: block; border-radius: 17px; }
   .expert-photo { min-height: 0; height: 240px; padding: 24px; }
   .expert-photo img { width: 170px; height: 170px; object-position: center; box-shadow: 0 0 0 7px #fff; }
+  .expert-photo-circle img { box-shadow: none; }
   .expert-copy { padding: 28px 22px 32px; }
   .expert-role { font-size: 17px; }
   .expert-copy h3 { font-size: 32px; }
