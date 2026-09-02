@@ -390,9 +390,9 @@ body { background: #fff; }
 .expert-photo { position: relative; display: grid; place-items: center; min-height: 360px; padding: 32px; background: #eef3f3; }
 .expert-photo::after { display: none; }
 .expert-photo img { width: 190px; height: 190px; object-fit: cover; object-position: center; border-radius: 50%; box-shadow: 0 0 0 8px #fff; }
-.expert-photo-circle { background: #eef3f3; }
+.expert-photo-circle { background: #fff; }
 .expert-photo-circle::after { display: none; }
-.expert-photo-circle img { object-fit: cover; object-position: center; }
+.expert-photo-circle img { object-fit: cover; object-position: center; clip-path: circle(46.4% at 50% 50%); box-shadow: none; }
 .expert-copy { display: flex; flex-direction: column; justify-content: center; padding: 48px 52px; }
 .expert-role { align-self: flex-start; margin-bottom: 15px; padding: 7px 14px; border-radius: 99px; background: #dff8f8; color: var(--blue-dark); font-size: 19px; font-weight: 800; }
 .expert-copy h3 { margin: 0; color: var(--ink); font-size: 38px; letter-spacing: .05em; }
