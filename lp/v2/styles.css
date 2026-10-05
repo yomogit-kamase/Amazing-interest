@@ -49,7 +49,7 @@ h3 { line-height: 1.55; }
 .main-nav > a:hover::after { transform: scaleX(1); transform-origin: left; }
 .menu-toggle { display: none; }
 
-.hero { position: relative; min-height: calc(100svh - 88px); overflow: hidden; background: linear-gradient(90deg, var(--paper) 0 48%, #eee9df 48%); }
+.hero { position: relative; min-height: calc(100svh - 88px); overflow: hidden; background: linear-gradient(90deg, var(--paper) 0 44%, #fbfaf7 100%); }
 .hero::before { content: ""; position: absolute; top: -260px; left: -220px; width: 520px; height: 520px; border: 1px solid rgb(180 152 102 / 25%); border-radius: 50%; box-shadow: 0 0 0 90px rgb(180 152 102 / 6%); }
 .hero-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); width: min(1440px, 100%); min-height: 680px; margin: auto; }
 .hero-copy { position: relative; z-index: 2; align-self: center; min-width: 0; padding: 70px clamp(28px, 3vw, 48px) 90px; }
@@ -62,12 +62,12 @@ h3 { line-height: 1.55; }
 .hero-actions { display: flex; align-items: center; gap: 18px 25px; flex-wrap: wrap; }
 .text-link { color: var(--navy); font-size: 15px; font-weight: 700; text-underline-offset: 6px; }
 .hero-note { margin: 13px 0 0; color: var(--muted); font-size: 14px; }
-.hero-slider { position: relative; min-width: 0; background: #e8e2d7; }
+.hero-slider { position: relative; min-width: 0; background: #fbfaf7; }
 .slides { position: absolute; inset: 0; }
 .slide { position: absolute; inset: 0; margin: 0; opacity: 0; transition: opacity 1.2s ease; }
 .slide.is-active { z-index: 1; opacity: 1; }
 .slide img { width: 100%; height: 100%; object-fit: cover; }
-.slide:nth-child(1) img, .slide:nth-child(2) img, .slide:nth-child(4) img, .slide:nth-child(6) img { object-fit: contain; background: #fff; }
+.slide:nth-child(1) img, .slide:nth-child(2) img, .slide:nth-child(4) img, .slide:nth-child(6) img { object-fit: contain; background: #fbfaf7; }
 .slider-controls { position: absolute; z-index: 5; right: 28px; bottom: 24px; left: 28px; display: flex; align-items: center; justify-content: flex-end; gap: 10px; }
 .slider-button, .slider-pause { min-width: 42px; min-height: 42px; border: 1px solid rgb(255 255 255 / 65%); border-radius: 99px; background: rgb(24 42 69 / 78%); color: #fff; cursor: pointer; }
 .slider-pause { padding: 8px 15px; border-radius: 2px; font-size: 13px; }
