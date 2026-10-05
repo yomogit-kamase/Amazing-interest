@@ -77,7 +77,7 @@ h3 { line-height: 1.55; }
 .scroll-cue { position: absolute; z-index: 6; bottom: 22px; left: max(48px, calc((100vw - 1300px)/2)); display: flex; align-items: center; gap: 12px; color: var(--navy); font-family: Georgia, serif; font-size: 11px; letter-spacing: .2em; text-decoration: none; }
 .scroll-cue i { display: block; width: 56px; height: 1px; background: var(--gold); }
 
-.intro { position: relative; padding: 130px 0; overflow: hidden; background: var(--navy); color: #fff; text-align: center; }
+.intro { position: relative; padding: 130px 0; overflow: hidden; background: var(--navy); color: #fff; }
 .intro::before, .intro::after { content: ""; position: absolute; width: 380px; height: 380px; border: 1px solid rgb(255 255 255 / 8%); border-radius: 50%; }
 .intro::before { top: -220px; left: -80px; }
 .intro::after { right: -160px; bottom: -240px; box-shadow: 0 0 0 75px rgb(255 255 255 / 2%); }
@@ -145,7 +145,7 @@ h3 { line-height: 1.55; }
 .member-list article > span { grid-column: 1 / -1; }
 .problem-grid, .members-layout, .contact-layout { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
 .persona-grid > *, .expertise-grid > *, .problem-grid > *, .members-layout > *, .contact-layout > *, .faq-layout > *, .form-row > * { min-width: 0; }
-p, li, figcaption, label, summary { overflow-wrap: anywhere; }
+p, li, figcaption, label, summary { overflow-wrap: break-word; }
 .member-list span { color: var(--violet); font-size: 13px; font-weight: 700; }
 .member-list h3 { margin: 0; color: var(--navy); font-size: 22px; }
 .member-list p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.6; }
@@ -164,6 +164,7 @@ p, li, figcaption, label, summary { overflow-wrap: anywhere; }
 
 .faq { background: var(--paper); }
 .faq-layout { display: grid; grid-template-columns: 300px 1fr; gap: 80px; }
+.faq h2 { white-space: nowrap; }
 .faq-list { border-top: 1px solid var(--line); }
 .faq-list details { border-bottom: 1px solid var(--line); }
 .faq-list summary { position: relative; padding: 27px 55px 27px 0; color: var(--navy); font-weight: 700; cursor: pointer; list-style: none; }
@@ -256,7 +257,7 @@ p, li, figcaption, label, summary { overflow-wrap: anywhere; }
   .scroll-cue { display: none; }
   .intro { padding: 85px 0; text-align: left; }
   .intro h2 { font-size: clamp(30px, 5vw, 38px); }
-  .intro-lead { font-size: 19px; }
+  .intro-lead { font-size: 18px; line-height: 1.85; }
   .section-heading { margin-bottom: 40px; }
   .persona-grid, .expertise-grid { grid-template-columns: 1fr; }
   .persona-card { display: grid; grid-template-columns: 44% 56%; }
